@@ -1,44 +1,85 @@
 {
-  "name": "lovetrip-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.1.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+   "name": "lovetrip-app",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "start": "craco start",
+      "build": "craco build",
+      "test": "craco test",
+      "eject": "craco eject",
+      "type-check": "tsc --noEmit",
+      "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+      "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+      "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css}\""
+   },
+   "browserslist": {
+      "production": [
+         ">0.2%",
+         "not dead",
+         "not op_mini all"
+      ],
+      "development": [
+         "last 1 chrome version",
+         "last 1 firefox version",
+         "last 1 safari version"
+      ]
+   },
+   "packageManager": "yarn@4.11.0",
+   "dependencies": {
+      "@emotion/react": "11.11.1",
+      "@emotion/styled": "11.11.0",
+      "@react-google-maps/api": "^2.20.8",
+      "@testing-library/dom": "^10.4.0",
+      "@testing-library/jest-dom": "^6.6.3",
+      "@testing-library/react": "^16.1.0",
+      "@testing-library/user-event": "^13.2.1",
+      "@types/jest": "^27.0.1",
+      "@types/node": "^16.7.13",
+      "@types/react": "^19.0.0",
+      "@types/react-dom": "^19.0.0",
+      "date-fns": "^4.1.0",
+      "firebase": "^12.5.0",
+      "qs": "^6.15.2",
+      "react": "18.2.0",
+      "react-beautiful-dnd": "^13.1.1",
+      "react-copy-to-clipboard": "^5.1.0",
+      "react-day-picker": "8.8.2",
+      "react-dom": "18.2.0",
+      "react-helmet-async": "^3.0.0",
+      "react-hook-form": "^7.85.0",
+      "react-infinite-scroll-component": "^6.1.1",
+      "react-lazy-load-image-component": "^1.6.3",
+      "react-markdown": "9.0.0",
+      "react-query": "^3.39.3",
+      "react-router-dom": "^7.9.5",
+      "react-scripts": "5.0.1",
+      "react-virtuoso": "^4.18.16",
+      "recoil": "^0.7.7",
+      "swiper": "^12.0.3",
+      "typescript": "4.9.5",
+      "web-vitals": "^2.1.0"
+   },
+   "devDependencies": {
+      "@babel/preset-react": "^7.28.5",
+      "@craco/craco": "^7.1.0",
+      "@emotion/babel-plugin": "11.11.0",
+      "@emotion/core": "^11.0.0",
+      "@emotion/css": "11.11.2",
+      "@types/qs": "^6.15.1",
+      "@types/react-beautiful-dnd": "^13.1.8",
+      "@types/react-copy-to-clipboard": "^5.0.7",
+      "@types/react-lazy-load-image-component": "^1",
+      "craco-alias": "^3.0.1",
+      "eslint": "8.50.0",
+      "eslint-config-prettier": "^10.1.8",
+      "eslint-config-react-app": "^7.0.1",
+      "eslint-plugin-import": "^2.32.0",
+      "eslint-plugin-prettier": "^5.5.4",
+      "eslint-plugin-react": "^7.37.5",
+      "prettier": "^3.6.2"
+   },
+   "resolutions": {
+      "@types/react": "^18.2.0",
+      "@types/react-dom": "^18.2.0"
+   }
 }

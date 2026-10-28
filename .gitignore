@@ -11,6 +11,10 @@
 # production
 /build
 
+# generated / minified artifacts under src
+**/dist/
+**/*.min.js
+
 # misc
 .DS_Store
 .env.local

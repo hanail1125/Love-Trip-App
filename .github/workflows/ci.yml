@@ -23,6 +23,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'yarn' #👈 강의에는 없지만 빌드 속도를 높혀주기 위해 추가.
+          cache: 'yarn'
       - run: yarn install
       - run: CI='false' yarn build
